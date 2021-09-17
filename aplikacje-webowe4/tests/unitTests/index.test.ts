@@ -1,8 +1,36 @@
 import Notes from "../../src/Notes";
 import Note from "../../src/Note";
-import {INoteGen} from "../../src/interfaces";
 import AppStorage from "../../src/AppStorage";
 import {SaveModes} from "../../src/Enums";
+
+describe('notes init test', () => {
+    let note: Note;
+
+    beforeAll(() => {
+        note = new Note('test', 'test', 'black', 'test', '2021-05-30');
+    });
+
+    it('is note id correctly created', () => {
+        expect(note.id.length).toBeTruthy();
+    });
+
+    it ('is note color black', () => {
+        expect(note.color).toEqual('black');
+    });
+
+    it ('is note pinned', () => {
+        expect(note.pinned).toEqual(false);
+    });
+
+    it ('is note dateCreated', () => {
+        expect(note.dateCreated).toEqual('2021-05-30');
+    });
+
+    it ('is note body', () => {
+        expect(note.body).toEqual('test');
+    });
+})
+
 
 describe('Note', () => {
     it('completeNote', () => {
@@ -25,26 +53,6 @@ describe('Note', () => {
             dateCreated: note.dateCreated
         }));
     })
-})
-
-describe('notes init test', () => {
-    let note: INoteGen;
-
-    beforeAll(() => {
-        note = new Note('test', 'test', 'black', 'test', 'test');
-    });
-
-    it('is note id correctly created', () => {
-        expect(note.id.length).toBeTruthy();
-    });
-
-    it ('is note color black', () => {
-      expect(note.color).toEqual('black');
-    });
-
-    it ('is note color black', () => {
-        expect(note.pinned).toEqual(false);
-    });
 })
 
 describe('local storage test', () => {
