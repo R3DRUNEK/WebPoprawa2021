@@ -1,0 +1,53 @@
+.sobundBbutton {
+  width: 140px;
+  height: 120px;
+  margin-left: 10px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  font-size: 30px;
+  font-family:Arial;
+  background-color: rgb(255, 153, 0);
+}
+.playerButtonRecord{
+  width: 100px;
+  height: 40px;
+  margin-right: 3px;
+  border-radius: 5px;
+  background-color: rgb(240, 236, 15);
+}
+.playerButtonStart{
+  width: 40px;
+  height: 40px;
+  margin-right: 3px;
+  border-radius: 5px;
+  background-color: rgb(10, 247, 22);
+}
+p{
+  display: flex;
+  justify-content: center;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.playerCheckBox{
+  margin-top: 15px;
+}
+.trackDiv{
+  display: flex;
+  justify-content: center;
+}
+#soundbar_top{
+  margin-top: 100px;
+}
+#soundbar_top, #soundbar_bottom{
+  display: flex;
+  justify-content: center;
+}
+#PlaySelectedButton{
+  width: 80px;
+  height: 80px;
+  margin-right: 3px;
+  border-radius: 5px;
+  background-color: rgb(10, 247, 22);
+  font-size: 50px;
+}

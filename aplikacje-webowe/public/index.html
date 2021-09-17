@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <link rel="icon" href="media/favicon.ico">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title> P1 </title>
+</head>
+<style>
+  #loading {
+    height: 200px;
+    width: 300px;
+    background-image: url("assets/loading.svg");
+    background-repeat: no-repeat;
+    display: none;
+  }
+</style>
+<body>
+  <div class="input-data">
+    <label for="data"></label><input type="text" id="data">
+  </div>
+  <div class="stats-data">
+    <label for="sum"></label><input type="text" disabled id="sum">
+    <label for="avg"></label><input type="text" disabled id="avg">
+    <label for="min"></label><input type="text" disabled id="min">
+    <label for="max"></label><input type="text" disabled id="max">
+    <div id="loading"> Not valid data </div>
+  </div>
+  <script src="main.ts"></script>
+</body>
+
+</html>

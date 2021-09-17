@@ -1,0 +1,56 @@
+body {
+  background: lightblue;
+}
+
+.noteContainer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+
+  .note {
+    width: 250px;
+    height: 250px;
+    margin: 10px;
+    color:white;
+    background-color: red;
+    opacity: 0.5;
+
+    .title {
+        display: flex;
+        justify-content: center;
+        padding: 15px;
+    }
+
+    .body {
+      display: flex;
+      justify-content: center;
+      align-content: center;
+      padding: 25px;
+      outline: none;
+      background-color: inherit;
+      color: white;
+      border :none;
+    }
+
+    .pin {
+      padding: 5px;
+    }
+
+    .date {
+      display: flex;
+      justify-content: flex-end;
+      align-items: end;
+      padding:15px;
+    }
+
+    .remove {
+      padding: 5px;
+    }
+
+    .editButton {
+      appearance: none;
+    }
+  }
+
+}

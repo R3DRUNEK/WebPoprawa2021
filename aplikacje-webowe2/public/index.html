@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MusicMaker</title>
+  <link rel="stylesheet" type="text/css" href="../style.css">
+</head>
+<body>
+<audio src="../sounds/boom.wav" data-sound="boom"></audio>
+<audio src="../sounds/clap.wav" data-sound="clap"></audio>
+<audio src="../sounds/hihat.wav" data-sound="hihat"></audio>
+<audio src="../sounds/kick.wav" data-sound="kick"></audio>
+<audio src="../sounds/openhat.wav" data-sound="openhat"></audio>
+<audio src="../sounds/ride.wav" data-sound="ride"></audio>
+<audio src="../sounds/snare.wav" data-sound="snare"></audio>
+<audio src="../sounds/tink.wav" data-sound="tink"></audio>
+
+<div id="soundbar_top">
+  <button id = "q" class="sobundBbutton"> Q </br> Boom    </button>
+  <button id = "w" class="sobundBbutton"> W </br> Clap    </button>
+  <button id = "e" class="sobundBbutton"> E </br> Hihat   </button>
+  <button id = "r" class="sobundBbutton"> R </br> Kick    </button>
+</div>
+
+<div id="soundbar_bottom">
+  <button id = "a" class="sobundBbutton"> A </br> Openhat </button>
+  <button id = "s" class="sobundBbutton"> S </br> Ride    </button>
+  <button id = "d" class="sobundBbutton"> D </br> Snare   </button>
+  <button id = "f" class="sobundBbutton"> F </br> Kick    </button>
+</div>
+
+<div id="player">
+  <p>Checkbox, Record, Play</p>
+  <div id="track1" class="trackDiv">
+    <label for="track1Checkbox"></label><input type="checkbox" id="track1Checkbox" class="playerCheckBox">
+    <button id = "track1Record" class="playerButtonRecord"> Track1: Record  </button>
+    <button id = "track1Play" class="playerButtonStart"> &#x23F5; </button>
+  </div>
+
+  <div id="track2" class="trackDiv">
+    <label for="track2Checkbox"></label><input type="checkbox" id="track2Checkbox" class="playerCheckBox">
+    <button id = "track2Record" class="playerButtonRecord"> Track2: Record  </button>
+    <button id = "track2Play" class="playerButtonStart"> &#x23F5; </button>
+  </div>
+
+  <div id="track3" class="trackDiv">
+    <label for="track3Checkbox"></label><input type="checkbox" id="track3Checkbox" class="playerCheckBox">
+    <button id = "track3Record" class="playerButtonRecord"> Track3: Record  </button>
+    <button id = "track3Play" class="playerButtonStart"> &#x23F5; </button>
+  </div>
+
+  <div id="track4" class="trackDiv">
+    <label for="track4Checkbox"></label><input type="checkbox" id="track4Checkbox" class="playerCheckBox">
+    <button id = "track4Record" class="playerButtonRecord"> Track4: Record  </button>
+    <button id = "track4Play" class="playerButtonStart"> &#x23F5; </button>
+  </div>
+  <p>Play Selected</p>
+  <div id="PlaySelected" class="trackDiv">
+    <button id = "PlaySelectedButton"> &#x23F5; </button>
+  </div>
+</div>
+<script src="main.ts"></script>
+</body>
+</html>
